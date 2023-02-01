@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.login,
+.registration {
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #ccc;
+  margin: 20px;
+}
+
+.login h1,
+.registration h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.login input,
+.registration input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.login button,
+.registration button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  margin-bottom: 5px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+h1 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.input_register {
+  width: -webkit-fill-available !important;
+}
+
+.select {
+  width: 80%;
+  width: -webkit-fill-available !important;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;  
+  color: gray;
+}
+
+.select option {
+  color: black;
+}
+
+.select::-webkit-input-placeholder {
+  color: grey;
+}
+
+.select:focus, .select:active {
+  color: black;
+}
+
+.select {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;  
+  color: gray;
+  background-color: white;
+}
+
+.select option {
+  color: black;
+}
+
+
+
