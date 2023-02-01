@@ -9,7 +9,7 @@ function PurchasesRegistration() {
   const [product, setProduct] = useState("");  
   const [quantity, setQuantity] = useState(1); 
   const [priceForOne, setPriceForOne] = useState(0); 
-  const price = quantity * priceForOne; 
+  const price = useMemo(() => quantity * priceForOne, [quantity, priceForOne]); 
   const [adress, setAdress] = useState(""); 
   const [registrationStatus, setRegistrationStatus] = useState(""); 
   const today = new Date().toISOString().substr(0, 10);
@@ -66,6 +66,7 @@ function PurchasesRegistration() {
               className="input_register"
               type="text"
               value={today}
+              readOnly
             />
             <select
               className="select"
