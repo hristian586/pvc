@@ -37,9 +37,9 @@ function ClientPurch() {
                 <tr key={purchase.id}>
                   <td>{purchase.buyer}</td>
                   <td>{purchase.product}</td>
-                  <td>{purchase.purchase_date}</td>
+                  <td>{new Date(purchase.purchase_date).toLocaleDateString()}</td>
                   <td>{purchase.price}</td>
-                  <td>{purchase.address}</td>
+                  <td>{purchase.adress}</td>
                 </tr>
               ))}
             </tbody>
